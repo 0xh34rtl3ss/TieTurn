@@ -1,6 +1,6 @@
 {
-    "name": "tieturn",
-    "short_name": "tieturn",
+    "name": "rhb",
+    "short_name": "rhb",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

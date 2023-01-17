@@ -1,16 +1,17 @@
-# tieturn
+# N00b Entity - Digital Financial Companion
 
-A new Flutter project.
+A proof of concept system for RHB Get Your Hack On: ASEAN 2023 Virtual Hackathon
 
-## Getting Started
+## Problem Statement
 
-This project is a starting point for a Flutter application.
+Inefficiency and inconvenience in current physical banking services.
+- Require to visit a cash deposit machine or a branch to deposit cheques
+- Require to visit a branch for appointments for consultations
 
-A few resources to get you started if this is your first Flutter project:
+## Objectives
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Technology brings impactful changes that can make business flourish.
+- To reduce customer's time and effort to accomplish banking needs
+- To avoid customer dissatisfaction by minimising unsuccessful or wasted visits
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Screenshots

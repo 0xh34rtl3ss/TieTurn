@@ -1,4 +1,4 @@
-name: tieturn
+name: rhb
 description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to
@@ -20,7 +20,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: '>=2.18.2 <3.0.0'
+  sdk: '>=2.18.6 <3.0.0'
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -36,6 +36,20 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  path: ^1.8.2
+  camera: ^0.10.1
+  path_provider: ^2.0.11
+  http: ^0.13.5
+  file_picker: ^5.2.5
+  snackbar: ^1.0.1
+  awesome_snackbar_content: ^0.1.0
+  calendar_date_picker2: ^0.3.6
+  date_picker_timeline: ^1.2.3
+  day_night_time_picker: ^1.1.5
+  swipeable_button_view: ^0.0.2
+  page_transition: ^2.0.9
+  drop_down_list: ^0.0.4
+  flutter_dropdown_search: ^0.0.2
 
 dev_dependencies:
   flutter_test:
