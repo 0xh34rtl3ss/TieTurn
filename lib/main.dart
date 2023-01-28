@@ -35,22 +35,6 @@ class MainBar extends StatefulWidget {
 class _MainBarState extends State<MainBar> {
   @override
   Widget build(BuildContext context) {
-    return DefaultTabController(
-      length: 2,
-      child: Scaffold(
-        appBar: AppBar(
-          title: Text("RHB Bank"),
-          backgroundColor: Color(0xdd225c88),
-          bottom: const TabBar(
-            indicatorColor: Color(0xFF6BCDE6),
-            tabs: [
-              Tab(icon: Icon(Icons.camera)),
-              Tab(icon: Icon(Icons.format_align_center)),
-            ],
-          ),
-        ),
-        body: TabBarView(children: []),
-      ),
-    );
+    return MaterialApp(home: Login());
   }
 }
