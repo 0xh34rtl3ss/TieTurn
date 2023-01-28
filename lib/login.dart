@@ -79,6 +79,7 @@ class _LoginState extends State<Login> with SingleTickerProviderStateMixin {
                           SignInButton(
                             Buttons.GoogleDark,
                             onPressed: () {
+                              // Do google auth here'
                               Navigator.of(context).push(
                                 MaterialPageRoute(
                                   builder: (BuildContext context) {

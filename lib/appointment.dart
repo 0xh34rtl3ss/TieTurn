@@ -11,8 +11,6 @@ import 'package:calendar_date_picker2/calendar_date_picker2.dart';
 import 'package:flutter_dropdown_search/flutter_dropdown_search.dart';
 import 'package:swipeable_button_view/swipeable_button_view.dart';
 import 'package:flutter/material.dart';
-import '../utils/functions.dart';
-import 'package:awesome_snackbar_content/awesome_snackbar_content.dart';
 
 void main() {
   runApp(
