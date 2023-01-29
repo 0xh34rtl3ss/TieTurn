@@ -51,6 +51,9 @@ dependencies:
   page_transition: ^2.0.9
   drop_down_list: ^0.0.4
   flutter_dropdown_search: ^0.0.2
+  firebase_auth: ^4.2.5
+  google_sign_in: ^5.4.4
+  provider: ^6.0.5
 
 dev_dependencies:
   flutter_test:
