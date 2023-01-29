@@ -42,7 +42,7 @@ class Completedpage extends StatelessWidget {
               ),
               FloatingActionButton.extended(
                   onPressed: () {
-                    Navigator.pushNamed(context, '/');
+                    Navigator.pushNamed(context, '/appointment');
                   },
                   icon: Icon(Icons.home_filled),
                   label: Text("Home"))

@@ -132,6 +132,7 @@ class _AppointmentPage extends State<AppointmentPage> {
   String fullName = '';
   String email = '';
   String phone = '';
+  String branch = '';
 
   @override
   Widget build(BuildContext context) {
@@ -890,6 +891,11 @@ class _AppointmentPage extends State<AppointmentPage> {
                       onWaitingProcess: () {
                         Future.delayed(Duration(seconds: 3), () {
                           setState(() {
+                            print(_dateTime);
+                            print(_controller.text);
+                            print(fullName);
+                            print(email);
+                            print(phone);
                             isFinished = true;
                           });
                         });

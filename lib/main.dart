@@ -21,6 +21,10 @@ void main() async {
         fontFamily: 'Georgia',
       ),
       home: const Login(),
+      routes: {
+        '/appointment': (context) => AppointmentPage(),
+        '/completed': (context) => Completedpage()
+      },
     ),
   );
 }
