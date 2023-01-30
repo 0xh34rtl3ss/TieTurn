@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:flutter_signin_button/flutter_signin_button.dart';
+import 'package:rhb/provider/google_sign_in.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/src/provider.dart';
 import 'package:rhb/appointment.dart';
@@ -81,8 +82,9 @@ class _LoginState extends State<Login> with SingleTickerProviderStateMixin {
                             Buttons.GoogleDark,
                             onPressed: () {
                               // Do google auth here'
-                              final provider = 
-                                  Provider.of<GoogleSignInProvider>(context, listen:false);
+                              final provider =
+                                  Provider.of<GoogleSignInProvider>(context,
+                                      listen: false);
                               provider.googleLogin();
                               Navigator.of(context).push(
                                 MaterialPageRoute(

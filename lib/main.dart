@@ -13,11 +13,11 @@ import 'dart:io';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
-   //need to install firebase CLI and do fireflutter configuration to enable this and firebase_options.dart
-   //guide is on this website: https://firebase.google.com/docs/cli#windows-npm
-  options: DefaultFirebaseOptions.currentPlatform,
+    //need to install firebase CLI and do fireflutter configuration to enable this and firebase_options.dart
+    //guide is on this website: https://firebase.google.com/docs/cli#windows-npm
+    options: DefaultFirebaseOptions.currentPlatform,
   );
-  
+
   runApp(MyApp());
 }
 
@@ -25,27 +25,26 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
-  Widget build(BuildContext context)  => ChangeNotifierProvider(
-    create: (context) => GoogleSignInProvider(),
-    child: MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        // Define the default brightness and colors.
-        brightness: Brightness.light,
-        primaryColor: Color(0xFF6BCDE6),
+  Widget build(BuildContext context) => ChangeNotifierProvider(
+        create: (context) => GoogleSignInProvider(),
+        child: MaterialApp(
+          debugShowCheckedModeBanner: false,
+          theme: ThemeData(
+            // Define the default brightness and colors.
+            brightness: Brightness.light,
+            primaryColor: Color(0xFF6BCDE6),
 
-        // Define the default font family.
-        fontFamily: 'Georgia',
-      ),
-      home: const Login(),
-      routes: {
-        '/appointment': (context) => AppointmentPage(),
-        '/completed': (context) => Completedpage()
-      },
-    ),
-    );
+            // Define the default font family.
+            fontFamily: 'Georgia',
+          ),
+          home: const Login(),
+          routes: {
+            '/appointment': (context) => AppointmentPage(),
+            '/completed': (context) => Completedpage()
+          },
+        ),
+      );
 }
-
 
 class MainBar extends StatefulWidget {
   const MainBar({super.key});
@@ -61,10 +60,9 @@ class _MainBarState extends State<MainBar> {
   }
 }
 
-
-class _MainBarState extends State<MainBar> {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(home: Login());
-  }
-}
+// class _MainBarState extends State<MainBar> {
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(home: Login());
+//   }
+// }
