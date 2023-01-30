@@ -1,6 +1,7 @@
 // ignore_for_file: avoid_print, use_build_context_synchronously
 
 import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:rhb/provider/google_sign_in.dart';
@@ -11,7 +12,11 @@ import 'dart:io';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+  await Firebase.initializeApp(
+   //need to install firebase CLI and do fireflutter configuration to enable this and firebase_options.dart
+   //guide is on this website: https://firebase.google.com/docs/cli#windows-npm
+  options: DefaultFirebaseOptions.currentPlatform,
+  );
   
   runApp(MyApp());
 }
