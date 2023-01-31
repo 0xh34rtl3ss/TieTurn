@@ -6,6 +6,8 @@ import 'dart:io';
 import 'package:flutter/cupertino.dart';
 
 import 'completed.dart';
+import 'package:http/http.dart' as http;
+import 'dart:convert';
 import 'package:page_transition/page_transition.dart';
 import 'package:calendar_date_picker2/calendar_date_picker2.dart';
 import 'package:flutter_dropdown_search/flutter_dropdown_search.dart';
@@ -133,6 +135,28 @@ class _AppointmentPage extends State<AppointmentPage> {
   String email = '';
   String phone = '';
   String branch = '';
+
+  void _makePostRequest() async {
+    final response = await http.post(
+      Uri.parse('https://tieturn.herokuapp.com/completed'),
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      body: {
+        'name': fullName,
+        'email': email,
+        'phone': phone,
+        'branch': _controller.text,
+        'datetime': _dateTime.toString()
+      },
+    );
+
+    if (response.statusCode == 200) {
+      print('Success');
+    } else {
+      print('Failed');
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -896,6 +920,8 @@ class _AppointmentPage extends State<AppointmentPage> {
                             print(fullName);
                             print(email);
                             print(phone);
+                            _makePostRequest();
+
                             isFinished = true;
                           });
                         });
