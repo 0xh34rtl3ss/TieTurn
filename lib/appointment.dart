@@ -288,7 +288,7 @@ class _AppointmentPage extends State<AppointmentPage> {
                                   width: 15,
                                   height: 14.70,
                                   child: new Image.asset(
-                                    '../assets/Vector.png',
+                                    'assets/Vector.png',
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -405,7 +405,7 @@ class _AppointmentPage extends State<AppointmentPage> {
                                   width: 15,
                                   height: 14.70,
                                   child: new Image.asset(
-                                    '../assets/Vector.png',
+                                    'assets/Vector.png',
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -522,7 +522,7 @@ class _AppointmentPage extends State<AppointmentPage> {
                                   width: 15,
                                   height: 14.70,
                                   child: new Image.asset(
-                                    '../assets/Vector.png',
+                                    'assets/Vector.png',
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -639,7 +639,7 @@ class _AppointmentPage extends State<AppointmentPage> {
                                   width: 15,
                                   height: 14.70,
                                   child: new Image.asset(
-                                    '../assets/Vector.png',
+                                    'assets/Vector.png',
                                     fit: BoxFit.cover,
                                   ),
                                 ),
