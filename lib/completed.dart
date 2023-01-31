@@ -21,7 +21,7 @@ class Completedpage extends StatelessWidget {
                 width: 258,
                 height: 245,
                 child: new Image.asset(
-                  '../assets/hand.png',
+                  'assets/hand.png',
                   height: 60.0,
                   fit: BoxFit.cover,
                 ),
